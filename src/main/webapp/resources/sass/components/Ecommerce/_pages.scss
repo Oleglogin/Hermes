@@ -1,0 +1,98 @@
+// Grid Side Bar
+#secondary{
+	float: left;
+	&.col-md-3{
+		padding-left: 0px;
+		padding-right: 20px;
+	}
+	.search-form{
+		position: relative;
+		input{
+			width: 100%;
+			height: 36px;
+			border:2px solid $gray-lighter;
+			border-radius: 20px;
+			padding:0 20px;
+			font-family: "TXGR";
+			color: #666;
+		}
+		button{
+			position: absolute;
+			background: $gray-dark;
+			color: #dfdfdf;
+			font-size: 14px;	
+			border:none;
+			border-radius:50%;
+			position: absolute;
+			top: 1px;
+			right: 3px;
+			@include size(34px,34px);
+		}
+	}
+}
+#primary{
+	float: right;
+	&.col-md-9{
+		padding-left: 10px;
+		padding-right:0px;
+	}
+}
+#secondary.secondary-home5{
+	float: right;
+	&.col-md-3{
+		padding-right: 0px;
+		padding-left: 20px;
+	}
+}
+#primary.primary-home5{
+	float: left;
+	&.col-md-9{
+		padding-right: 10px;
+		padding-left:0px;
+	}
+}
+.bottom-home1-title{
+	h3.title{
+		font-size: 24px;
+		color: $gray-dark;
+		text-transform: uppercase;
+		padding-bottom: 20px;
+		margin-bottom:30px;
+		border-bottom: 1px solid $gray-lighter; 
+	}
+}
+@include maxDesktop{
+	.products{
+		&.grid_full,&.grid_full.grid_sidebar{
+			.item-inner{
+				width: 33.33%;
+			}
+		}
+	}
+}
+
+@include maxtable{
+	.products{
+		&.grid_full,&.grid_full.grid_sidebar{
+			.item-inner{
+				width: 50%;
+			}
+		}
+	}
+}
+
+@include maxmobile{
+	.products{
+		&.grid_full,&.grid_full.grid_sidebar{
+			.item-inner{
+				width: 100%;
+			}
+		}
+	}
+	.ordering{
+		.order-by{
+			margin-top: 20px;
+			margin-left: 0px !important;;
+		}
+	}
+}

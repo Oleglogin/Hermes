@@ -1,0 +1,335 @@
+.products{
+	&.grid_full{
+		.item-inner{
+			width: 25%;
+			float: left;
+			margin: 15px 0px;
+			padding:0 15px;
+			&:hover{
+			}
+		}
+		&.grid_sidebar{
+			.item-inner{
+				width: 33.33%;
+				&:nth-child(3n+1){
+					padding:0px 20px 0 0;
+				}
+				&:nth-child(3n+2){
+					padding:0 10px;
+				}
+				&:nth-child(3n){
+					padding:0px 0 0 20px;
+				}
+			}
+		}	
+		.container{
+			padding: 0px;
+		}
+		&.list-item{
+			.item-inner{
+				@include transition(all 0.3s ease 0s);
+				width: 100%;
+				padding: 0 0 10px 0 !important;
+				.product-images{
+					width: 20%;
+					float: left;
+				}
+				.product-title,.product-price,.description{
+					width: 80%;
+					float: right;
+					padding-left: 20px;
+				}
+				.product-title{
+					font-weight: 700;
+					font-size: 16px;
+					color: $gray;
+				}
+				.add-to-cart{
+					margin-left: 20px;
+					position: inherit;
+					top: inherit;
+					&:hover{
+						background:#fff;
+					}
+				}
+				.description{
+					display: inline-block;
+				}
+				.content-star{
+					float: left;
+					width: 100%;
+				}
+				.action{
+					position: relative;
+					top:inherit;
+					display: inline-block;
+					right: inherit;
+					float: inherit;
+					a{
+						background:$gray-lighter;
+						&:first-child{
+							margin-right:0px; 
+						}
+						&:hover{
+							i{
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+		.product{
+			.wrap-product-images{
+				position: relative;
+			}
+			.add-to-cart{
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				margin: 0px;
+				text-align: center;
+				background:none;
+				box-shadow:0 0 0 30px #ba933e inset;
+				color: #fff;
+				line-height: 54px;
+				padding:0 37px;
+				&:hover{
+					background:url("../images/Hermes-home1-header.png");
+					color: $brand-primary;
+					box-shadow:0 0 0 2px #ba933e inset;
+				}
+				&::after{
+					content: "";
+				}
+			}
+			.product-price{
+				&::after{
+					position: static;
+				}
+			}
+			.action{
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				a{
+					line-height: 54px;
+					background:url("../images/Hermes-home1-header.png");
+					display: inline-block;
+					box-shadow:0 0 0 0px #ba933e inset;
+					padding:0 15px;
+					&:first-child{
+						margin-right:-5px; 
+					}
+					&:hover{
+						box-shadow:0 0 0 30px #ba933e inset;
+						i{
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+	.product{
+		position: relative;
+		.product-images{
+			display: inline-block;
+			position: relative;
+			width: 100%;
+			img{
+				width: 100%;
+			}
+		}
+		p.product-title{
+			font-family: "TXGR";
+			font-size: 14px;
+			color: $gray;
+			line-height: 34px;
+		}
+		.description{
+			@extend p.product-title;
+			line-height: 20px;
+			display: none;
+		}
+		.product-price{
+			font-size: 16px;
+			color: #222;
+			line-height: 34px;
+			margin-bottom: 10px;
+			position: relative;
+			&:after{
+				position: absolute;
+				content: "";
+				height: 1px;
+				background:$gray-lighter;
+				bottom: 0px;
+				left: 50%;
+				right: 50%;
+				@include transition(all 0.6s ease 0s);
+			}
+		}
+		.add-to-cart{
+			display: inline-block;
+			padding: 0px;
+			text-transform: uppercase;
+			font-size: 13px;
+			color: #222;
+			margin-bottom: 20px;
+			font-style: normal;
+			opacity: 0;
+			padding-left:20px;
+			@include transition(all 0.3s ease 0s);
+			position: relative;
+			&::after{
+				font-family: "FontAwesome";
+				font-size: 16px;
+				font-style: normal;
+				line-height: 1;
+				position: absolute;
+				content: "\f067";
+				left: 0px;
+				top:3px;
+				color: $gray;
+			}
+		}
+		img.secondary_image{
+			opacity: 0;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: auto;
+			@include transition(all 0.9s ease 0s);
+		}
+		.action{
+			display: inline-block;
+			vertical-align: top;
+			float: right;
+			a{
+				opacity: 0;
+				&:first-child{			
+					@include transition(all 0.3s ease 0.2s);		
+					i{
+						margin-left: 8px;
+					}					
+				}
+				&:last-child{
+					@include transition(all 0.3s ease 0.4s);	
+				}
+				i{
+					font-size: 16px;
+					color: #888;
+					margin: 0 5px;
+				}	
+			}
+		}
+		.content-star{
+			float: right;
+			font-size: 10px;
+			color: #ddd;
+			margin-bottom:0px; 
+			margin-top:10px; 
+			i.active{
+				color: #e19824;
+			}
+		}
+		.lable{
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			z-index: 99;
+			font-size: 11px;
+			text-transform: capitalize;
+			color: #fff;
+			display: inline-block;
+			padding: 5px 10px;
+			background-color: #000;
+		}
+		&.sale{
+			.product-price{
+				color: #e19824;
+				.price-old{
+					color: #999;
+					font-weight: 400;
+					margin-left: 5px;
+					text-decoration: line-through;
+				}
+			}
+		}
+
+	}
+}
+.slider-home7{
+	.product{
+		.time{
+			position:absolute;
+			left: 0px;
+			top: 50px;
+			z-index: 9999;
+			width: 60px;
+			.distance{
+				margin-right: 0px;
+				margin-bottom:5px; 
+				padding:5px;
+				border:none;
+				&.day{
+					background:$brand-home7;
+				}
+				&.hours{
+					background:#fec689;
+				}
+				&.minutes{
+					background:#7accc8;
+				}
+				&.seconds{
+					background:#c4df9c;
+				}
+				.number{
+					font-size: 16px;
+					font-weight: 400;
+				}
+				.text{
+					color: #fff;
+					font-size: 12px;
+					font-family: "TXGB";
+					margin: 0 0 8px;
+				}
+			}
+		}
+	}
+}
+.item-inner{
+	border-radius: 0px 0px 8px 8px;
+	@include transition(all 0.5s ease 0s);
+	&:hover{
+		.product img.secondary_image{
+			opacity: 100;
+		}
+		img.primary_image{
+			opacity: 0;
+		}
+		.product .action{
+			a{
+				opacity: 100;
+			}			
+		}
+		.add-to-cart{
+			opacity: 100;
+		}
+		.product-price{
+			&:after{
+				left: 0px;
+				right: 0px;
+			}
+		}
+	}
+
+}
+.tab-content{
+	@include transition(all 0.3s ease 0s);
+	transform: translate(0px, 20px);
+	&.active{
+		transform: translate(0px, 0px);
+	}
+}

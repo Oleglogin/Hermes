@@ -1,0 +1,720 @@
+/** 6.5.1. General **/
+#footer {
+	margin-top: 30px;display: inline-block;width: 100%;
+	background: url("../images/Hermes-bg-footer.png") repeat;
+	padding-top: 70px;
+	margin-bottom:-3px;
+	h3{
+		font-size: 18px;color: #fff;text-transform: uppercase;margin-bottom: 60px;line-height: 24px;position: relative;
+		&:after{
+			position: absolute;
+			content: "";
+			left: 0px;
+			bottom: -30px;
+			width: 40px;
+			height: 3px;
+			background: $brand-primary;
+		}
+	}
+	.footer-bt{
+			padding-bottom: 70px;
+			margin-bottom: 70px;
+			h3{
+				font-size: 22px;
+				color: #ddd;
+				margin-bottom: 50px;
+				&:after{
+					position: static;
+				}
+			}
+	}
+	&.border-top{
+		border-top:1px solid #f2f2f2;
+	}
+	.footer-top{
+		.col-md-6{
+			p{
+				max-width: 400px;
+				margin-bottom: 20px;
+				line-height: 24px;
+				&.italic{
+					font-family: "TXGR";
+					margin-top:10px; 
+				}
+			}
+			.infomation{
+				p{
+					margin-bottom: 0px;
+				}
+			}
+			h2{
+				font-size: 36px;
+				color: #eee;
+				text-transform: uppercase;
+				margin-bottom: 10px;
+			}
+			a{
+				width: 140px;
+				height: 40px;
+				line-height: 36px;
+				border: 2px solid $brand-primary;
+				color: $brand-primary;
+				background: transparent;
+				text-align: center;
+				text-transform: uppercase;
+				font-size: 13px;
+				display: inline-block;
+				margin-top:25px; 
+				&:hover{
+					background:$brand-primary;
+					color: #fff;
+				}
+			}
+		}
+		.footer-top-bottom{
+			margin-top: 100px;
+			p{
+				float: left;
+			}
+			ul.menu{
+				float: right;
+				li{
+					display: inline-block;
+					margin-left: 20px;
+					a{
+						&:hover{
+							padding-left: 0px;
+						}
+					}
+				}
+			}
+		}
+		p{
+			font-family: "TXGR";
+			color: #aaa;
+			line-height: 24px;
+		}
+		.infomation{
+			p{
+				color: #888;
+			}
+			i{
+				font-size: 13px;
+				color: #888;
+				line-height: 24px;
+				margin-right: 8px;
+			}
+		}
+		.col-md-4{
+			ul{
+				width: 50%;
+				display: inline-block;
+				float: left;
+			}
+		}
+		ul li a{
+			font-family: "TXGR" !important;
+			font-size: 14px;
+			color: #aaa;
+			line-height: 30px;
+			transition:all 0.5s ease-out 0s;
+			&:hover{
+				color: $brand-primary;padding-left: 15px;
+			}
+		}
+	}
+	.footer-bottom{
+		.col-md-6{
+			padding: 0px;
+			span,form{
+				display: inline-block;
+			}
+			span{
+				color: $brand-primary;
+				text-transform: uppercase;
+				font-size: 18px;
+				margin-right: 30px;
+			}
+			form{
+				input{
+					font-family: "TXGR";
+					font-size: 13px;
+					color: #666;
+					background:#000;
+					border: 2px solid $gray-dark;
+					padding: 0px 20px;
+					height: 40px;
+					line-height: 40px;
+					width: 300px;
+					margin-right:5px; 
+				}
+			}
+			&:last-child{
+				text-align: right;
+			}
+		}
+		padding: 30px 0px;border-top: 1px solid #262626;margin-top: 20px;
+		a{
+			&:hover i{
+				color: #aaa;
+				font-size: 20px;
+				margin-right: 25px;
+			}
+			i{
+				color: #aaa;
+				font-size: 20px;
+				margin-right: 25px;
+			}
+		}
+		p,p a{
+			font-family: "TXGR";font-size: 14px;line-height: 20px;color: #aaa;
+		}
+		p{
+			float: right;
+			padding-right:0px;
+		}
+	}
+}
+.home-v1{
+	.bottom-home1{
+		&.footer-bt{
+			padding-bottom:100px !important;
+			margin-bottom:100px !important; 
+		}
+	}
+}
+#footer.footer-v5 {
+	h3::after{
+		bottom:0px;
+	}
+	&.footer-v4{
+		.footer-top ul li a::after{
+			background:$brand-home4;
+		}
+	}
+}
+// bottom home 1
+.bottom-home1{
+		position: relative;
+		.col-md-3{
+			&:first-child{
+				padding-left: 0px;
+			}
+		}
+		&:before{
+			position: absolute;
+			content: "";
+			left: 0px;
+			right: 0px;
+			height: 6px;
+			background: url(../images/Hermes-border-bottom.png) repeat-x;
+			bottom: 0px;
+		}
+		p{
+			color: #aaaaaa;
+			font-family: "TXGR";
+			font-size: 13px;
+			line-height: 20px;
+		}
+		
+		.products-item{
+			margin-bottom: 30px;
+			.product-images{
+				width: 80px;
+				height: auto;
+				display: inline-block;
+				margin-right: 10px;
+				vertical-align: -30px;
+				position: relative;
+				img{
+					&.secondary_image{
+						opacity: 0;
+						width: 100%;
+						height: auto;
+						position: absolute;
+						top: 0px;
+						left: 0px;
+					}
+					&.primary_image{
+						width: 100%;
+					}
+				}
+			}
+			.product-content{
+				display: inline-block;
+				vertical-align: top;
+				.product-name{
+					font-family: "TXGR";
+					color: #888;
+					margin-bottom: 5px;
+					display: inline-block;
+				}
+				.product-price{
+					font-size: 16px;
+					color: #ddd;
+					font-family: "TXGB";
+					margin-bottom: 15px;
+				}
+				.add-to-cart{
+					text-transform: uppercase;
+					font-size: 13px;
+				}
+			}
+			&:hover{
+				.product-images{
+					img{
+						&.secondary_image{
+							opacity: 100;
+						}
+						&.primary_image{
+							opacity: 0;
+						}
+					}
+				}
+			}
+		}
+		&.bottom-home4{
+			display: inline-block;
+			width: 100%;
+			margin-bottom:50px; 
+			.col-md-4{
+				&:first-child{
+					padding-left:0px;
+				}
+				&:last-child{
+					padding-right:0px;
+				}
+			}
+		}
+	}
+/** 6.5.2. Footer Version 1 **/
+#footer {
+	&.footer-v2 {
+		margin-top: 0px;
+		.footer-bottom{
+			border-top: 1px solid #efe6ef;
+		}
+	}
+}
+/** 6.5.3. Footer Version 2 **/
+#footer {
+	&.footer-v2 {
+
+	}
+}
+/** 6.5.3. Footer Version 3 **/
+#footer {
+	&.footer-v3 {
+		margin-top: 0px;
+		background: none;
+		border-top: 1px solid $gray-lighter;
+		.footer-top{
+			margin-bottom:30px; 
+			position: relative;
+			display: inline-block;
+			width: 100%;
+			.col-md-6{
+				h2{
+					a{
+						border: none;
+						padding:0px;
+						height: auto;
+						width: auto;
+						text-align: left;
+						font-size: 36px;
+						color: $gray-dark;
+					}
+				}
+			}
+			.col-md-6{
+				a{
+					border-color: $brand-home3;
+					color: $brand-home3;
+				}
+			}
+			a{
+				&:hover{
+					color: $brand-home3;
+				}
+			}
+			ul{
+				li{
+					a{
+						color: $gray-light;
+					}
+				}
+			}
+		}
+		h3{
+			color: $gray-dark;
+		}
+		.footer-bottom{
+			border: none;
+			margin-top: 0px;
+			padding:0px;
+			.col-md-6{
+				&:last-child{
+					text-align: right;
+					a{
+						color: $gray-light;
+						font-family: "TXGR";
+						&:nth-child(1),&:nth-child(2){
+							margin-right: 15px;
+						}
+						&:hover,&.active{
+							color: $home-v3-color;
+							text-decoration: underline;
+							i{
+								color: $home-v3-color;
+							}
+						}
+					}
+				}
+			}
+			p{
+				float: inherit;
+			}
+			.border-footer{
+				overflow: hidden;
+				border-top:1px solid $gray-lighter; 
+				padding: 30px 0px;
+				.col-md-6{
+					&:last-child{
+						padding-right: 0px;
+						a{
+							margin: 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/** 6.5.3. Footer Version 4 **/
+#footer{
+	&.footer-v4{
+		background: #222;
+		margin-top:-4px; 
+		.footer-top{
+			h2{
+				a{
+					color: #ddd;
+					font-size: 40px;
+					border:none;
+					text-transform: uppercase;
+				}
+				margin-bottom:  40px;
+			}
+			.col-md-4{
+				&:first-child{
+					p{
+						&.italic{
+							font-size: "TXGR";
+							font-style: normal;
+							color: $gray-light;
+							margin-bottom: 20px; 
+						}
+					}
+					.infomation{
+						p{
+							font-family: "TXGR";
+							color: #ddd;
+							i{
+								color: 	#ddd;
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+			h3{
+				font-size: 20px;
+				color:#ddd;
+				margin-bottom:40px; 
+				padding-bottom:15px;
+				&::after{
+					height: 1px;
+					background:#666;
+				}
+			}
+			ul{
+				li{
+					a{
+						position: relative;
+						&:after{
+							position: absolute;
+							content: "";
+							width: 0px;
+							height: 1px;
+							background:$brand-primary;
+							left: 0px;
+							bottom:0px;
+							@include transition(all 0.3s ease-out 0s);
+						}
+						&:hover{
+							padding-left:0px;
+							&:after{
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+			.col-md-4{
+				form{
+					input{
+						width: 100%;
+						height: 40px;
+						background:transparent;
+						border: 1px solid #393939;
+						color: #666;
+						font-family: "TXGR";
+						padding:0px 20px;
+						margin-top:20px; 
+					}
+					button{
+						margin-top:20px; 
+					}
+				}
+			}
+		}
+		.footer-bottom{
+			ul{
+				li{
+					display: inline-block;
+					margin-right:10px; 
+					a{
+						color: $gray-light;
+						@include transition(all 0.3s ease-out 0s);
+						font-family: "TXGR";
+						position: relative;
+						&:after{
+							@include transition(all 0.3s ease-out 0s);
+							position: absolute;
+							content: "";
+							width: 0px;
+							height: 1px;
+							background:$gray-light;
+							left: 0;
+							bottom:0;
+						}
+						&.active,&:hover{
+							color: #ddd;
+							&:after{
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.footer-v5{
+			.footer-top{
+				form{
+					position: relative;
+					border-radius:20px;
+					margin-bottom:30px; 
+					input{
+						margin: 0px;
+						border-radius:20px;
+						padding-right:150px !important;
+					}
+					button{
+						position: absolute;
+						right: 0px;
+						top: 0px;
+						border-radius:20px;
+						background:$brand-home4;
+						border:none;
+						margin: 0px;
+						border:2px solid $brand-home4;
+						&:hover{
+							background:transparent;
+							color: #fff;
+						}
+					}
+				}
+				.connect-icon{
+					width: 100%;
+					a{
+						&:after{
+							position: static !important;
+						}
+						i{
+							border-radius:0px;
+							background:#363636;
+							color:#7f7f7f;
+						}
+						&:hover{
+							i{
+								color: #fff;
+								background:$brand-home4;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.footer-v6{
+			.footer-top{
+				ul.brand-footer{
+					width: 100%;
+					li{
+						width: 50%;
+						float: left;
+						text-align: center;
+						padding:0 2px;
+						a{
+							&:after{
+								position: static;
+							}
+							display: inline-block;
+							width: 100%;
+							border: 1px solid #444444;
+							margin-bottom:4px; 
+							&:hover{
+								border: 1px solid #666666;
+							}
+						}
+					}
+				}
+				form{
+					input{
+						border-radius: 0px;
+						background:#484848;
+						color: $gray-light;
+						font-family: "Roboto";
+						font-size: 14px;
+						font-weight:400;
+					}
+					button{
+						border-radius: 0px;
+						background: transparent;
+						font-family:"Lato";
+						font-weight:700;
+						font-size: 12px;
+						color: #aaa;
+						border:none;
+						&:after{
+							position: absolute;
+							content: "";
+							left: 0px;
+							width: 1px;
+							height: 16px;
+							background:#aaa;
+							top: 13px;
+						}
+					}
+				}
+			}
+			.footer-bottom{
+				background:#292929;
+				padding:25px 0px;
+				margin-top: 50px;
+			}
+		}
+	}
+}
+/** 6.5.4. Footer Version 5 **/
+#footer {
+	&.footer-v5 {
+		.footer-bottom{
+			background:#181818;
+			border: none;
+			.col-md-6{
+				a{
+					&:hover,&.active{
+						color: #fff !important;
+						i{
+							color: #fff !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include tablet {
+	#footer{
+		.footer-top{
+			.col-md-4{
+				margin: 50px 0px;
+				display: inline-block;
+				width: 100%;
+				ul.menu{
+					&:last-child{
+						text-align: right;
+						li{
+							a{
+								&:hover{
+									padding-right:15px;
+									padding-left: 0px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.footer-bottom{
+			.col-md-6{
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			p{
+				float: inherit;
+			}
+		}
+	}
+	.banner-center{
+		.col-md-6,.col-md-3{
+			padding: 0px !important;
+		}
+		.col-md-6{
+			margin: 40px 0px;
+		}
+	}
+	.shipping-container{
+		.col-md-4{
+			&:nth-child(2){
+				margin: 20px 0px;
+			}
+		}
+	}
+	#footer.footer-v3 .footer-bottom .col-md-6:last-child{
+		text-align: center;
+	}
+}
+@include maxtable{
+	#footer{
+		.footer-top{
+			.col-md-4{
+				margin: 50px 0px;
+				display: inline-block;
+				width: 100%;
+				ul.menu{
+					&:last-child{
+						text-align: right;
+						li{
+							a{
+								&:hover{
+									padding-right:15px;
+									padding-left: 0px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.footer-bottom{
+			.col-md-6{
+				text-align: center;
+				margin-bottom: 10px;
+			}
+			p{
+				float: inherit;
+			}
+		}
+	}
+}

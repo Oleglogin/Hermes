@@ -1,0 +1,43 @@
+.brand-container{
+	display: inline-block;
+	width: 100%;
+	background: #222;
+	ul{
+		width: 100%;
+		li{
+			display: inline-block;
+			text-align: center;
+			border-left: 1px solid $gray-lighter;
+			width: 20%;
+			float: left;
+			img{
+				max-width: 100%;
+			}
+			&:last-child{
+				border-right: 1px solid $gray-lighter;
+			}
+		}
+	}
+	.owl-carousel .owl-item img{
+		width: auto;
+		max-width:100%;
+	}
+}
+.brand-container.brand-container-home5{
+	padding:50px 0px;
+	border-bottom:5px solid #444;
+	.owl-carousel .owl-controls .owl-nav .owl-prev,.owl-carousel .owl-controls .owl-nav .owl-next{
+		background:transparent;
+		border:none;
+		box-shadow:none;
+		i{
+			font-size: 32px;
+		}
+		&:hover{
+			box-shadow:none;
+			i{
+				color: $brand-home4;
+			}
+		}
+	}
+}
