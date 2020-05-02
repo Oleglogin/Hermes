@@ -16,6 +16,6 @@ public class MainController {
 
     @GetMapping(value ="/welcome")
     public String toWelcomePage(){
-        return "/welcome";
+        return "welcome";
     }
 }
